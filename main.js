@@ -55,3 +55,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document
+  .getElementById("formReserva")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Evita que la página se recargue
+
+    // 1. Capturar los datos del formulario
+    const nombre = document.getElementById("nombre").value;
+    const fecha = document.getElementById("fecha").value;
+    const hora = document.getElementById("hora").value;
+    const personas = document.getElementById("personas").value;
+
+    // 2. Tu número de teléfono (debe incluir el código de país, sin el símbolo +)
+    // Ejemplo para México: 52 seguido de los 10 dígitos (525512345678)
+    const telefonoRestaurante = "524411193502";
+
+    // 3. Crear el mensaje
+    const mensaje =
+      `¡Hola! Me gustaría hacer una reserva en Bendita Vendimia.%0A%0A` +
+      `*Nombre:* ${nombre}%0A` +
+      `*Fecha:* ${fecha}%0A` +
+      `*Hora:* ${hora}%0A` +
+      `*Personas:* ${personas}%0A%0A` +
+      `¿Tienen disponibilidad?`;
+
+    // 4. Crear la URL de WhatsApp y redirigir al usuario
+    const urlWhatsApp = `https://wa.me/${telefonoRestaurante}?text=${mensaje}`;
+    window.open(urlWhatsApp, "_blank");
+  });
