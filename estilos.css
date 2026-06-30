@@ -937,7 +937,7 @@ h6 {
 }
 /* --- SECCIÓN DE RESERVAS --- */
 .reserva-section {
-  background-color: #1a1a1a; /* Fondo oscuro elegante */
+  background-color: var(--color-surface); /* Fondo oscuro elegante */
   color: #f4ece1; /* Texto claro cálido */
   padding: 60px 20px;
   text-align: center;
@@ -958,11 +958,11 @@ h6 {
 #formReserva {
   max-width: 500px;
   margin: 0 auto;
-  background-color: #262626; /* Un gris un poco más claro para separar el formulario del fondo */
+  /* background-color: #262626;Un gris un poco más claro para separar el formulario del fondo */
   padding: 40px 30px;
   border-radius: 8px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-  border: 1px solid #3d3d3d;
+  /* border: 1px solid #3d3d3d; */
 }
 
 /* --- TEXTOS DE LOS CAMPOS (LABELS) --- */
@@ -970,8 +970,8 @@ h6 {
   display: block;
   text-align: left;
   margin-bottom: 8px;
-  font-size: 0.95rem;
-  color: #d1c7b7;
+  font-size: 1rem;
+  color: var(--color-primary);
   letter-spacing: 0.5px;
 }
 
@@ -980,22 +980,24 @@ h6 {
   width: 100%;
   padding: 12px 15px;
   margin-bottom: 25px;
-  background-color: #121212;
-  border: 1px solid #4a4a4a;
-  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #c9a96e; /* Línea inferior dorada */
+  background-color: transparent; /* Fondo transparente para integrarse con el fondo oscuro */
+  /*border: 1px solid #4a4a4a; */
+  color: var(--color-primary);
   border-radius: 4px;
   font-family: inherit;
   font-size: 1rem;
   box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 
 /* Efecto al hacer clic para escribir (Focus) */
-#formReserva input:focus {
+/* #formReserva input:focus {
   outline: none;
   border-color: #c9a96e;
   box-shadow: 0 0 8px rgba(201, 169, 110, 0.2);
-}
+} */
 
 /* --- BOTÓN DE RESERVA --- */
 #formReserva button {
@@ -1023,9 +1025,9 @@ h6 {
 }
 
 /* Efecto al hacer clic en el botón (Active) */
-#formReserva button:active {
+/* #formReserva button:active {
   transform: translateY(0);
-}
+} */
 
 /* --- Componente: Footer --- */
 .footer {
