@@ -937,7 +937,7 @@ h6 {
 }
 /* --- SECCIÓN DE RESERVAS --- */
 .reserva-section {
-  background-color: var(--color-surface); /* Fondo oscuro elegante */
+  background-color: var(--color-bg-alt); /* Fondo oscuro elegante */
   color: #f4ece1; /* Texto claro cálido */
   padding: 60px 20px;
   text-align: center;
