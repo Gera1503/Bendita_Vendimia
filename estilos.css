@@ -984,20 +984,18 @@ h6 {
   border-bottom: 2px solid #c9a96e; /* Línea inferior dorada */
   background-color: transparent; /* Fondo transparente para integrarse con el fondo oscuro */
   /*border: 1px solid #4a4a4a; */
-  color: var(--color-primary);
+  color: var(--color-text-muted);
   border-radius: 4px;
   font-family: inherit;
   font-size: 1rem;
   box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
-  /* transition: all 0.3s ease; */
+  transition: all 0.3s ease;
 }
 
 /* Efecto al hacer clic para escribir (Focus) */
-/* #formReserva input:focus {
+#formReserva input:focus {
   outline: none;
-  border-color: #c9a96e;
-  box-shadow: 0 0 8px rgba(201, 169, 110, 0.2);
-} */
+}
 
 /* --- BOTÓN DE RESERVA --- */
 #formReserva button {
@@ -1025,9 +1023,9 @@ h6 {
 }
 
 /* Efecto al hacer clic en el botón (Active) */
-/* #formReserva button:active {
+#formReserva button:active {
   transform: translateY(0);
-} */
+}
 
 /* --- Componente: Footer --- */
 .footer {
